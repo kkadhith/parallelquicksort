@@ -11,7 +11,7 @@ My implementation can be boiled down to the following:
 
 - If it isn't we will start by "partitioning" the array. 
 
-- start by choosing a pivot index, preferably randomly. 
+- Start by choosing a pivot index, preferably randomly. 
 
 - Start filtering the array by finding elements that are less than / greater than the pivot. We store these values in a boolean array. Note that we don't need to filter elements that are equal to the pivot, since we can determine the number of "equal to" elements using the offset from the previous filter.
 

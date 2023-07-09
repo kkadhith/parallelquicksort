@@ -39,7 +39,6 @@ int main(int argc, char* argv[]) {
 
   double total_time = 0;
   for (int i = 0; i <= num_rounds; i++) {
-    // Generate random arrays
     parallel_for(0, n,
                  [&](size_t j) { A[j] = B[j] = hash64(j * random_seed); });
 
